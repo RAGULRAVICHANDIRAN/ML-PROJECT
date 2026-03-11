@@ -1,0 +1,50 @@
+{
+  "best_model_name": "Random Forest",
+  "feature_names": [
+    "amount",
+    "location_code",
+    "transaction_type",
+    "prev_tx_frequency",
+    "device_type",
+    "hour",
+    "day_of_week"
+  ],
+  "results": {
+    "Naive Bayes": {
+      "accuracy": 0.947,
+      "precision": 0.3493,
+      "recall": 0.8889,
+      "f1_score": 0.5016,
+      "roc_auc": 0.9843,
+      "cv_f1_mean": 0.9479,
+      "cv_f1_std": 0.0057
+    },
+    "Random Forest": {
+      "accuracy": 0.986,
+      "precision": 0.7667,
+      "recall": 0.7667,
+      "f1_score": 0.7667,
+      "roc_auc": 0.9913,
+      "cv_f1_mean": 0.994,
+      "cv_f1_std": 0.0028
+    },
+    "XGBoost": {
+      "accuracy": 0.985,
+      "precision": 0.732,
+      "recall": 0.7889,
+      "f1_score": 0.7594,
+      "roc_auc": 0.9923,
+      "cv_f1_mean": 0.994,
+      "cv_f1_std": 0.003
+    },
+    "LightGBM": {
+      "accuracy": 0.9853,
+      "precision": 0.7556,
+      "recall": 0.7556,
+      "f1_score": 0.7556,
+      "roc_auc": 0.9912,
+      "cv_f1_mean": 0.994,
+      "cv_f1_std": 0.0027
+    }
+  }
+}
