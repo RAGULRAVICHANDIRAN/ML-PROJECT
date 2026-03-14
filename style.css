@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+.game-box {
+  background-color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+button {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+}
