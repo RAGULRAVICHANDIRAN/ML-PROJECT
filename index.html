@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stone Paper Sissor</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="game-box">
+      <h1>Stone Paper Sissor</h1>
+      <form method="POST">
+        <button name="choice" value="stone">🪨 Stone</button>
+        <button name="choice" value="paper">📄 Paper</button>
+        <button name="choice" value="sissor">✂️ Sissor</button>
+      </form>
+      {% if result %}
+      <div class="result">
+        <p>Computer chose: <strong>{{ computer_choice }}</strong></p>
+        <p><strong>{{ result }}</strong></p>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
